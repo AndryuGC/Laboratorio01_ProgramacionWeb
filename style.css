@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbe2ea;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.tarjeta h1 {
+    color: #0b1e3f;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: #c8102e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #0b1e3f;
+    transform: scale(1.1);
+}
+
+.pie {
+    background-color: #0b1e3f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.imagen {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;   
+}
+
+.imagen:hover {
+    transform: scale(1.15);        
+}
+
+.boton-sombra {
+    background-color: #c8102e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.boton-sombra:hover {
+    box-shadow: 0 10px 20px rgba(200, 16, 46, 0.6);
+    transform: translateY(-3px);   /* se eleva un poco */
+}
+
+.tarjeta h1 {
+    background: linear-gradient(to right, #c8102e, #0b1e3f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.tarjeta-eleva {
+    background-color: #ffffff;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;   /* animación suave */
+}
+
+.tarjeta-eleva:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;   /* <-- agrega esta línea */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
